@@ -1,0 +1,14 @@
+{
+    "projects" :
+    [
+        {
+            "id" : 0,
+            "project_name" : "Random Quote Generator",
+            "technologies" : ["JavaScript","HTML","CSS"],
+            "live_Link" : "https://martinclason123.github.io/Random-Quote-Generator/",
+            "github_link" : "https://github.com/martinclason123/Random-Quote-Generator",
+            "image_urls" : ["/images/project1creenshot1.png","/images/project2creenshot2.png"]
+
+        }
+    ]
+}
