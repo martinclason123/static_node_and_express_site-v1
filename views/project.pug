@@ -1,9 +1,8 @@
 extends layout.pug
 
 block content 
-  if project.project_name == 'undefined'
-     h1 That Project Does Not Exist
-  else
+  if project.project_name
+
     nav.grid-container.portfolio-breadcrumb
       a(href='/') ← Back
     article.grid-container.portfolio-intro.portfolio-project
@@ -33,4 +32,5 @@ block content
       //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential employers will like to see. 
       each val in project.image_urls
         img.image(src=val)
-    
+  else
+     p no dice  
