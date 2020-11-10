@@ -7,7 +7,48 @@
             "technologies" : ["JavaScript","HTML","CSS"],
             "live_Link" : "https://martinclason123.github.io/Random-Quote-Generator/",
             "github_link" : "https://github.com/martinclason123/Random-Quote-Generator",
-            "image_urls" : ["/images/project1creenshot1.png","/images/project2creenshot2.png"]
+            "image_urls" : ["/static/images/project1screenshot1.PNG","/images/project2creenshot2.png"],
+            "description" : "An app that selects and displays random quotes from an array"
+
+        },
+        {
+            "id" : 1,
+            "project_name" : "Pagination",
+            "technologies" : ["JavaScript","HTML","CSS"],
+            "live_Link" : "https://martinclason123.github.io/Pagination/",
+            "github_link" : "https://github.com/martinclason123/Pagination.git",
+            "image_urls" : ["/static/images/project2screenshot1.PNG","/images/project2creenshot2.png"],
+            "description" : "An app that breaks down a directory into groups of 10, and adds a search function"
+
+        },
+        {
+            "id" : 2,
+            "project_name" : "Interactive Form",
+            "technologies" : ["JavaScript","HTML","CSS","JQuery"],
+            "live_Link" : "https://martinclason123.github.io/InteractiveForm/",
+            "github_link" : "https://github.com/martinclason123/InteractiveForm.git",
+            "image_urls" : ["/static/images/project3screenshot1.png","/static/images/project3screenshot2.png","/static/images/project3screenshot3.png"],
+            "description" : "JavaScript that provides dynamic validation and instruction for a conference sign-up"
+
+        },
+        {
+            "id" : 3,
+            "project_name" : "Game Show",
+            "technologies" : ["JavaScript","HTML","CSS","JQuery"],
+            "live_Link" : "https://martinclason123.github.io/OOP-Game/",
+            "github_link" : "https://github.com/martinclason123/OOP-Game.git",
+            "image_urls" : ["/static/images/project4screenshot1.PNG","/images/project4creenshot2.png"],
+            "description" : "A game that allows players to guess which letters make up a randomly selected phrase"
+
+        },
+        {
+            "id" : 4,
+            "project_name" : "Public API Request",
+            "technologies" : ["JavaScript","HTML","CSS","JQuery"],
+            "live_Link" : "https://martinclason123.github.io/PublicAPIRequest/",
+            "github_link" : "https://github.com/martinclason123/PublicAPIRequest.git",
+            "image_urls" : ["/static/images/project5screenshot1.PNG","/images/project5creenshot2.png"],
+            "description" : "Javascript to make an API get request, append the results to the page, and provide search functionality"
 
         }
     ]
