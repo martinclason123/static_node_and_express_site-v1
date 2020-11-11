@@ -10,9 +10,15 @@ router.get('/', (req,res)=> {
     res.render('index');
 })
 
-router.get('/projects/:id', (req,res) => {
+router.get('/projects/:id', (req,res, next) => {
     res.locals.project = jsonData.projects[req.params.id];
+    if (typeof(res.locals.project) !== 'undefined') {
     res.render('project');
+    } else {
+        const err = new Error('Project Not found');
+        err.status = 500;
+        next(err)
+    }
 })
 
 router.get('/about', (req,res)=> {
