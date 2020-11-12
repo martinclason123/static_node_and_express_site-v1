@@ -7,14 +7,14 @@ block content
       h1 My Work so Far
 
       p.lead.text-light
-        | A list of the projects I have completed while learning JavaScript, from earliest to latest. 
-  article.grid-container.portfolio-index
+        | A portfolio of the projects I have completed while learning JavaScript, from earliest to latest. 
+  article.grid-container.portfolio-index.projGallery
     
     .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
   
       
       each val, index in project
-        .cell
+        .cell.projGallery
          a(href= val.page_link)
             img.thumbnail(src= val.landing_image)
             h5= val.project_name
