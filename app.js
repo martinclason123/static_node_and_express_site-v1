@@ -9,6 +9,7 @@ const app = express();
 app.engine('pug', require('pug').__express)
 app.set('view engine', 'pug');
 
+// imports the routes
 const routes = require('./routes');
 
 app.use(routes);
@@ -24,13 +25,14 @@ app.use(function(req, res, next) {
 
 // handle error, print stacktrace
 app.use(function(err, req, res, next) {
-    //res.status(err.status || 500);
+    // if it's a 404 error, server 'page-not-found
     if (err.status == 404){
         res.render('page-not-found', {
             message: err.message,
             error: err
         });
     } else {
+    // otherwise server the standard error page
     res.render('error', {
         message: err.message,
         error: err
@@ -38,7 +40,7 @@ app.use(function(err, req, res, next) {
     }
 });
 
-
+// serves the app on port 3000
 app.listen(3000, () => {
     console.log('listening on port 3000...')
 });
